@@ -1,0 +1,17 @@
+<div class="w-full fixed top-0 left-0 bg-sitemain py-2 h-[45px] sm:h-[64px] text-white z-20" data-controller="navbar">
+    <nav class="container mx-auto px-8 flex justify-between items-center">
+        <%= link_to(root_path) do %>
+            <div class="flex gap-2 items-center">
+                <%= image_tag 'used/using/blue_logo.jpg', class:"h-[45px] sm:h-[64px] w-auto" %>
+                <p class="font-black text-xl md:text-4xl">SolarTech <span class="font-light text-lg md:text-xl">INDUSTRIES</span></p>
+            </div>
+        <% end %>
+        <button class="md:hidden" data-action="navbar#hamburger">v</button>
+        <div class="hidden md:flex items-center font-black gap-8">
+            <%= link_to 'New Solar', home_newsolar_path, class:"whitespace-nowrap" %>
+            <%= link_to 'Service', home_service_path, class:"whitespace-nowrap" %>
+            <%= link_to 'Upgrades', home_upgrades_path, class:"whitespace-nowrap" %>
+            <%= link_to 'About Us', home_about_path, class:"whitespace-nowrap" %>
+        </div>
+    </nav>
+</div>
