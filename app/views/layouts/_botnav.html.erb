@@ -1,0 +1,16 @@
+<div class="w-full bg-sitemain py-2 h-[250x] text-white">
+    <nav class="container mx-auto px-8 flex justify-between items-center">
+        <%= link_to(root_path) do %>
+            <div class="flex gap-2 items-center">
+                <%= image_tag 'used/using/blue_logo.jpg', class:"h-[200px] w-auto rounded-t-xl" %>
+                <p class="font-black text-lg lg:text-xl xl:text-2xl whitespace-nowrap">SolarTech <span class="font-light text-xs md:text-sm xl:text-lg">INDUSTRIES</span></p>
+            </div>
+        <% end %>
+        <div class="flex items-center font-black gap-8">
+            <%= link_to 'New Solar', home_newsolar_path, class:"whitespace-nowrap" %>
+            <%= link_to 'Service', home_service_path, class:"whitespace-nowrap" %>
+            <%= link_to 'Upgrades', home_upgrades_path, class:"whitespace-nowrap" %>
+            <%= link_to 'About Us', home_about_path, class:"whitespace-nowrap" %>
+        </div>
+    </nav>
+</div>
