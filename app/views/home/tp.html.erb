@@ -4,47 +4,83 @@
       <source src="videos/iehhero.mp4" type="video/mp4">
     </video>
     <div class="flex w-full h-full z-10 absolute top-0 left-0 bg-black/40">
-      <section class="container mx-auto flex flex-col justify-end pb-8">
-        <div class="self-end p-2">
-          
-        </div>
-        <h2 class="text-2xl xs:text-3xl sm:text-4xl xl:text-5xl font-black text-white tracking-tight whitespace-nowrap">Oahu's Home<br> for All Things Solar</h2>
-        <div>
-          <p class="text-sm text-white font-semibold leading-7 bg-black/20 p-2 rounded-md w-full sm:w-2/3 md:w-full mt-2">
-          Since we bought our first truck in 2004 we have helped thousands of customers start making their own power. Now, we offer design, installation, upgrades, repairs and warranty service for all solar power systems.
-          <br><br>
-          Contact us for a quote today.
+      <div class="flex p-2 items-center absolute top-2 right-10">
+        <%= image_tag 'svg/marks/namefull.svg', class:"h-12" %>
+        <%= image_tag 'svg/marks/transp1.svg', class:"h-14 rounded" %>
+      </div>
+      <section class="container mx-auto flex flex-col justify-between py-8">
+        <h2 class="text-2xl xs:text-3xl sm:text-4xl xl:text-8xl font-black text-white tracking-tight xl:w-5/12 mt-8">Good design cuts costs, not corners.</h2>
+        <div class="xl:w-5/12">
+          <p class="text-lg text-white font-semibold leading-7 bg-black/20 p-2 rounded-md mt-2">
+            We don't have to sacrifice quality to guarantee our price. We simply build around what you need, and source directly from suppliers.
+            <br>
+            It's just common sense.
+            <br><br>
+            Join over 7,000 other families and businesses who saved two ways with SolarTech.
           </p>
           <div class="flex self-end gap-4 items-center mt-2">
-            <p class="text-lg font-black text-green-300">808-456-6254</p>
-            <button class="bg-sitesecond text-white font-bold m-[2px] px-4 py-2 max-w-fit">Quick Quote</button>
+            <p class="text-xl font-black text-white">808-456-6254</p>
+            <button class="bg-sitesecond text-white font-bold m-[2px] px-4 py-2 max-w-fit">Get a Quote</button>
           </div>
         </div>
       </section>
     </div>
   </div>
 
-  <div class="w-full bg-sitemain">
-    <div class="w-2/3 bg-sitemain py-2 md:py-4 h-[90px] sm:h-[64px] md:h-[80px] grid grid-cols-2 sm:grid-cols-4 md:gap-24 text-white text-sm md:text-lg font-semibold"> 
-      <div class="flex gap-2 items-center justify-center">
-        <%= image_tag 'svg/houses/h1', class:"h-[90px] sm:h-[64px] md:h-[80px]"%>
-        <p>System Design</p>
+  <section class="w-full bg-sitemain relative h-[28rem]">
+    <ul class="container mx-auto flex justify-center items-center gap-4 text-lg h-full"> 
+      <li class="w-1/3 z-50">
+        <div class="flex flex-col gap-2 m-2 text-white bg-black/60 rounded p-2">
+          <h4>New Solar</h4>
+          <p>
+            If you want a lower bill, protection from power outages, or just to help the environment,
+            we make it easier than ever. <br>
+            We handle permits and approvals, help you with incentive programs, and stand behind our installations with full guarantees.
+            All you need to do is turn it on.
+          </p>
+        </div>
+      </li>
+      <li class="w-1/3 z-50">
+        <div class="flex flex-col gap-2 m-2 text-white bg-black/60 rounded p-2">
+          <h4>Upgrades</h4>
+          <p>
+            When your life grows, we can help your system keep up. 
+            <br>
+            Our inspections are free, and we do NEM upgrades, modular battery storage, microinverters, panels, and more. 
+            We try to preserve the equipment you already paid for. We'll talk about your recent power needs, and find the smallest change that meets them.
+          </p>
+        </div>
+      </li>
+      <li class="w-1/3 z-50">
+        <div class="flex flex-col gap-2 m-2 text-white bg-black/60 rounded p-2">
+          <h4>Service</h4>
+          <p>
+            20 years is a long time on any rooftop.
+            <br>
+            If your system is showing its age, or you need warranty service, we have over 10 years of experience servicing all kinds of hardware.
+            Even if we didn't install it, we've seen it before.
+          </p>
+        </div>
+      </li>
+    </ul>
+    <div class="absolute inset-y-0 inset-x-0 container mx-auto flex justify-center items-center gap-4 shadow-lg h-full">
+      <div class="w-1/3 h-3/4">
+        <%= image_tag 'svg/houses/h11.svg', class:"h-full" %>
       </div>
-      <div class="flex gap-2 items-center justify-center">
-        <%= image_tag 'svg/houses/h2', class:"h-[90px] sm:h-[64px] md:h-[80px]"%>o
-        <p>Installation</p>
+      <div class="w-1/3 h-3/4">
+        <%= image_tag 'svg/houses/h11.svg', class:"h-full" %>
       </div>
-      <div class="flex gap-2 items-center justify-center">
-        <%= image_tag 'svg/houses/h3', class:"h-[90px] sm:h-[64px] md:h-[80px]"%>
-        <p>Service</p>
-      </div>
-      <div class="flex gap-2 items-center justify-center">
-        <%= image_tag 'svg/houses/h4', class:"h-[90px] sm:h-[64px] md:h-[80px]"%>
-        <p>Upgrades</p>
+      <div class="w-1/3 h-3/4">
+        <%= image_tag 'svg/houses/h11.svg', class:"h-full" %>
       </div>
     </div>
-    <%= image_tag 'svg/separators/roofwhite.svg', class:"-mt-4"%>
-  </div>
+  </section>
+
+  <section class="w-full bg-white" data-controller="calculator">
+
+  <%= image_tag 'svg/separators/roofwhite.svg', class:"-mt-4"%>
+  </section>
+
   <div class="flex items-center w-11/12 bg-gradient-to-b from-white to-slate-300 rounded-md relative -mt-2">
     <div class="container mx-auto flex justify-end">
       <div class="flex w-full py-12 sm:w-3/4 md:w-7/8 justify-center">

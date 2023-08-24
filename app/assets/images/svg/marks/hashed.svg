@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48.25 45.15">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-4 {
+        stroke-width: 3px;
+      }
+
+      .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke: #fff;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-linejoin: round;
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-3 {
+        stroke-width: 2px;
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <polyline class="cls-5" points="47.34 1.18 2.34 1.18 29.97 13.57 47.34 1.18"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <polygon class="cls-5" points="18.81 31.9 2.34 43.65 2.34 1.65 28.56 13.4 18.81 31.9"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <line class="cls-4" x1="30.09" y1="13.25" x2="46.57" y2="1.5"/>
+    <line class="cls-4" x1="46.57" y1="43.5" x2="20.35" y2="31.75"/>
+    <rect class="cls-1" x="32.59" y="24.44" width="11.49" height="6.75"/>
+    <polygon class="cls-4" points="20.35 31.9 3.88 43.65 3.88 1.65 30.09 13.4 20.35 31.9"/>
+    <line class="cls-4" x1="46.75" y1="43.65" x2="4.06" y2="43.65"/>
+    <line class="cls-4" x1="46.57" y1="1.65" x2="46.57" y2="43.65"/>
+    <line class="cls-4" x1="3.88" y1="1.5" x2="46.57" y2="1.5"/>
+    <g>
+      <g class="cls-7">
+        <g>
+          <line class="cls-2" x1="76.65" y1="-20.78" x2="10.21" y2="26.99"/>
+          <line class="cls-2" x1="60.33" y1="-43.48" x2="-6.11" y2="4.3"/>
+          <line class="cls-2" x1="68.06" y1="-32.73" x2="1.62" y2="15.05"/>
+          <line class="cls-2" x1="73.22" y1="-25.56" x2="6.78" y2="22.22"/>
+          <line class="cls-2" x1="23.5" y1="17.44" x2="-21.82" y2="-45.58"/>
+          <line class="cls-2" x1="36.79" y1="7.88" x2="-8.53" y2="-55.14"/>
+          <line class="cls-2" x1="10.21" y1="26.99" x2="-35.11" y2="-36.03"/>
+        </g>
+      </g>
+      <polyline class="cls-5" points="47.34 1.18 2.34 1.18 29.97 13.57 47.34 1.18"/>
+    </g>
+    <g>
+      <g class="cls-6">
+        <g>
+          <line class="cls-3" x1="-31.76" y1="14.95" x2="6.65" y2="-12.47"/>
+          <line class="cls-3" x1="1.65" y1="61.74" x2="40.05" y2="34.32"/>
+          <line class="cls-3" x1="-2.53" y1="55.89" x2="35.88" y2="28.47"/>
+          <line class="cls-3" x1="-6.7" y1="50.04" x2="31.7" y2="22.62"/>
+          <line class="cls-3" x1="-10.88" y1="44.2" x2="27.52" y2="16.78"/>
+          <line class="cls-3" x1="-15.05" y1="38.35" x2="23.35" y2="10.93"/>
+          <line class="cls-3" x1="-19.23" y1="32.5" x2="19.17" y2="5.08"/>
+          <line class="cls-3" x1="-23.41" y1="26.65" x2="15" y2="-.77"/>
+          <line class="cls-3" x1="-27.58" y1="20.8" x2="10.82" y2="-6.62"/>
+          <line class="cls-3" x1="5.82" y1="67.59" x2="44.23" y2="40.17"/>
+          <line class="cls-3" x1="-31.76" y1="14.95" x2="5.82" y2="67.59"/>
+          <line class="cls-3" x1="2.38" y1="-9.42" x2="39.96" y2="43.21"/>
+          <line class="cls-3" x1="-1.89" y1="-6.37" x2="35.69" y2="46.26"/>
+          <line class="cls-3" x1="-6.15" y1="-3.33" x2="31.43" y2="49.31"/>
+          <line class="cls-3" x1="-10.42" y1="-.28" x2="27.16" y2="52.35"/>
+          <line class="cls-3" x1="-14.69" y1="2.77" x2="22.89" y2="55.4"/>
+          <line class="cls-3" x1="-18.95" y1="5.81" x2="18.62" y2="58.45"/>
+          <line class="cls-3" x1="-23.22" y1="8.86" x2="14.36" y2="61.49"/>
+          <line class="cls-3" x1="-27.49" y1="11.91" x2="10.09" y2="64.54"/>
+          <line class="cls-3" x1="6.65" y1="-12.47" x2="44.23" y2="40.17"/>
+        </g>
+      </g>
+      <polygon class="cls-5" points="18.81 31.9 2.34 43.65 2.34 1.65 28.56 13.4 18.81 31.9"/>
+    </g>
+    <line class="cls-3" x1="38.7" y1="43.22" x2="18.78" y2="34.29"/>
+    <line class="cls-3" x1="25.73" y1="43.22" x2="13.4" y2="37.7"/>
+  </g>
+</svg>
