@@ -7,4 +7,6 @@ class HomeController < ApplicationController
   end
   def service
   end
+  def getsolar
+  end
 end

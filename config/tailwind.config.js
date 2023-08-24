@@ -30,6 +30,9 @@ module.exports = {
         mdp: '.4rem',
         xl: '1.5rem',
       },
+      screens: {
+      'xs': '420px',
+      },
     },
   },
   plugins: [

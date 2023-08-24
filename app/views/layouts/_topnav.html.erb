@@ -1,4 +1,4 @@
-<div class="w-full fixed top-0 left-0 bg-sitemain py-2 h-[45px] sm:h-[64px] text-white z-50 shadow-xl" data-controller="navbar">
+<div class="w-full md:fixed md:top-0 md:left-0 bg-sitemain py-2 h-[55px] text-white z-50 shadow-xl" data-controller="navbar">
     <nav class="container mx-auto px-8 flex justify-between items-center">
         <%= link_to(root_path) do %>
             <div class="flex gap-2 items-center">
@@ -12,6 +12,7 @@
             <%= link_to 'Service', home_service_path, class:"whitespace-nowrap" %>
             <%= link_to 'Upgrades', home_upgrades_path, class:"whitespace-nowrap" %>
             <%= link_to 'About Us', home_about_path, class:"whitespace-nowrap" %>
+            <%= link_to 'TP', home_tp_path, class:"whitespace-nowrap" %>
         </div>
     </nav>
 </div>
