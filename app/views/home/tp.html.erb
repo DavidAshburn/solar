@@ -5,7 +5,9 @@
     </video>
     <div class="flex w-full h-full z-10 absolute top-0 left-0 bg-black/40">
       <section class="container mx-auto flex flex-col justify-end pb-8">
-        <h3 class="self-end p-2"></h3>
+        <div class="self-end p-2">
+          
+        </div>
         <h2 class="text-2xl xs:text-3xl sm:text-4xl xl:text-5xl font-black text-white tracking-tight whitespace-nowrap">Oahu's Home<br> for All Things Solar</h2>
         <div>
           <p class="text-sm text-white font-semibold leading-7 bg-black/20 p-2 rounded-md w-full sm:w-2/3 md:w-full mt-2">
@@ -22,28 +24,28 @@
     </div>
   </div>
 
-  <div class="w-5/6 self-center bg-sitemain py-2 md:py-4 h-[90px] sm:h-[64px] md:h-[80px] grid grid-cols-2 sm:grid-cols-4 items-center md:gap-24 text-white text-sm md:text-lg font-semibold"> 
-    <div class="flex gap-2 items-center justify-center">
-      <span class="text-xl font-black text-sitesecond block">+</span>
-      <p>System Design</p>
+  <div class="w-full bg-sitemain">
+    <div class="w-2/3 bg-sitemain py-2 md:py-4 h-[90px] sm:h-[64px] md:h-[80px] grid grid-cols-2 sm:grid-cols-4 md:gap-24 text-white text-sm md:text-lg font-semibold"> 
+      <div class="flex gap-2 items-center justify-center">
+        <%= image_tag 'svg/houses/h1', class:"h-[90px] sm:h-[64px] md:h-[80px]"%>
+        <p>System Design</p>
+      </div>
+      <div class="flex gap-2 items-center justify-center">
+        <%= image_tag 'svg/houses/h2', class:"h-[90px] sm:h-[64px] md:h-[80px]"%>o
+        <p>Installation</p>
+      </div>
+      <div class="flex gap-2 items-center justify-center">
+        <%= image_tag 'svg/houses/h3', class:"h-[90px] sm:h-[64px] md:h-[80px]"%>
+        <p>Service</p>
+      </div>
+      <div class="flex gap-2 items-center justify-center">
+        <%= image_tag 'svg/houses/h4', class:"h-[90px] sm:h-[64px] md:h-[80px]"%>
+        <p>Upgrades</p>
+      </div>
     </div>
-    <div class="flex gap-2 items-center justify-center">
-      <span class="text-xl font-black text-sitesecond block">+</span>
-      <p>Installation</p>
-    </div>
-    <div class="flex gap-2 items-center justify-center">
-      <span class="text-xl font-black text-sitesecond block">+</span>
-      <p>Service</p>
-    </div>
-    <div class="flex gap-2 items-center justify-center">
-      <span class="text-xl font-black text-sitesecond block">+</span>
-      <p>Upgrades</p>
-    </div>
+    <%= image_tag 'svg/separators/roofwhite.svg', class:"-mt-4"%>
   </div>
-
-  
-
-  <div class="flex items-center w-11/12 bg-gradient-to-b from-white to-slate-300 rounded-md relative">
+  <div class="flex items-center w-11/12 bg-gradient-to-b from-white to-slate-300 rounded-md relative -mt-2">
     <div class="container mx-auto flex justify-end">
       <div class="flex w-full py-12 sm:w-3/4 md:w-7/8 justify-center">
         <div class="flex flex-col gap-12 sm:w-5/6 px-4 font-montserrat font-semibold text-sitedark text-lg md:text-xl pt-[15dvh] sm:pt-0"> 
@@ -61,25 +63,27 @@
       <%= image_tag 'used/using/oahupv.jpg', class:"absolute top-0 start-0 w-full sm:w-1/4 h-[15dvh] sm:h-full object-cover" %>
     </div>
   </div>
-
-  <div class="mt-8 self-end flex items-center w-11/12 bg-gradient-to-b from-white to-slate-300 rounded-md relative mb-4">
-    <div class="container mx-auto">
-      <div class="flex w-full py-12 sm:w-3/4 md:w-7/8 justify-center">
-        <div class="flex flex-col text-start gap-12 sm:w-5/6 ml-4 pr-4 font-montserrat font-semibold text-sitedark text-lg md:text-xl pt-[15dvh] sm:pt-0"> 
-          <h4 class="text-3xl sm:text-4xl lg:text-5xl ml-4 sm:ml-0 font-bold text-sitemain tracking-tight">Our process.</h4>
-          <p class="w-5/6 lg:w-2/3 ml-8 md:ml-12 font-medium text-sm sm:text-base">
-            One of our local consultants will have a meeting with you to discuss what you want out of a solar system and your power use over the past year. They'll take that information and design a system that meets the goals you set. You may have a few options, but once you find a plan that you like, we take it from there.
-            <br><br>
-            We prepare and submit all the applications and approvals needed by the city and state. Their turnaround is usually 4-6 weeks long.
-            <br><br>
-            When approval comes back, we can schedule the installation and all you have to do is turn it on a few days later. You can download the monitoring app for your phone, but we keep an eye on your system for you and we'll let you know if we see a problem.
-          </p>
-          <%= link_to 'Learn More', home_service_path, class:"rounded-sm bg-sitesecond text-white text-base font-bold px-4 py-2 max-w-fit self-end mr-16 md:mr-24 xl:mr-[20%]" %>
+  <%= image_tag 'svg/separators/roofmain.svg', class:"mt-4"%>
+  <div class="w-full bg-sitemain -mt-2">
+    <div class="mt-8 self-end flex items-center w-11/12 bg-gradient-to-b from-white to-slate-300 rounded-md relative mb-4">
+      <div class="container mx-auto">
+        <div class="flex w-full py-12 sm:w-3/4 md:w-7/8 justify-center">
+          <div class="flex flex-col text-start gap-12 sm:w-5/6 ml-4 pr-4 font-montserrat font-semibold text-sitedark text-lg md:text-xl pt-[15dvh] sm:pt-0"> 
+            <h4 class="text-3xl sm:text-4xl lg:text-5xl ml-4 sm:ml-0 font-bold text-sitemain tracking-tight">Our process.</h4>
+            <p class="w-5/6 lg:w-2/3 ml-8 md:ml-12 font-medium text-sm sm:text-base">
+              One of our local consultants will have a meeting with you to discuss what you want out of a solar system and your power use over the past year. They'll take that information and design a system that meets the goals you set. You may have a few options, but once you find a plan that you like, we take it from there.
+              <br><br>
+              We prepare and submit all the applications and approvals needed by the city and state. Their turnaround is usually 4-6 weeks long.
+              <br><br>
+              When approval comes back, we can schedule the installation and all you have to do is turn it on a few days later. You can download the monitoring app for your phone, but we keep an eye on your system for you and we'll let you know if we see a problem.
+            </p>
+            <%= link_to 'Learn More', home_service_path, class:"rounded-sm bg-sitesecond text-white text-base font-bold px-4 py-2 max-w-fit self-end mr-16 md:mr-24 xl:mr-[20%]" %>
+          </div>
         </div>
       </div>
-    </div>
-    <div>
-      <%= image_tag 'used/using/oahupv.jpg', class:"absolute top-0 end-0 sm:right-0 w-full sm:w-1/4 h-[15dvh] sm:h-full object-cover" %>
+      <div>
+        <%= image_tag 'used/using/oahupv.jpg', class:"absolute top-0 end-0 sm:right-0 w-full sm:w-1/4 h-[15dvh] sm:h-full object-cover" %>
+      </div>
     </div>
   </div>
 </div>
