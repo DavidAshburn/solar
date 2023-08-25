@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   get 'home/service'
   get 'home/upgrades'
   get 'home/getsolar'
-  get 'home/tp'
 
   get 'resources/batteries'
   get 'resources/solarpower'

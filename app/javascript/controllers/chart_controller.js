@@ -7,10 +7,10 @@ export default class extends Controller {
     ];
   
     connect() {
-        this.sliderTarget.value = 150;
+        this.sliderTarget.value = 400;
         this.ctx = document.getElementById('monthlypowerchart');
 
-        this.years = ['1','2','4','6','10','15','20'];
+        this.years = ['1','2','4','6','10','15'];
         this.values = [];
         for(let i = 0; i < this.years.length; i++) {
             this.values.push(parseInt(this.years[i]) * 12 * 150);
@@ -50,7 +50,7 @@ export default class extends Controller {
                                 return '$' + Chart.Ticks.formatters.numeric.apply(this, [value, index, ticks]);
                             }
                         },
-                        suggestedMax: 150000
+                        suggestedMax: 80000
                     },
                     x: {
                         ticks: {
@@ -64,7 +64,7 @@ export default class extends Controller {
                     },
                 },
                 layout: {
-                    padding: 40 
+                    padding: 10 
                 },
             },
         });

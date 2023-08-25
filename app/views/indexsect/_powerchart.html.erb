@@ -1,0 +1,20 @@
+<section class="w-full bg-sitemain flex justify-center gap-12">
+    <div data-controller="chart" class="my-8 w-5/12 flex flex-col items-center">
+      <div class="flex items-center gap-2">
+        <input type="range" id="chartlymonth" name="monthly" min="150" max="600" step="10" data-chart-target="slider" data-action="input->chart#setValues" class=""/>
+        <label for="monthly" class="text-white font-black text-xl">$<span data-chart-target="slideval">400</span> Monthly</label>
+      </div>
+      <canvas id="monthlypowerchart" aria-label="Cost of electricity over time" role="img" class="bg-gradient-to-b from-white from-20% to-gray-300"></canvas>
+    </div>
+    <div class="my-8 w-5/12 flex flex-col justify-center items-center gap-2">
+      <h4 class="text-3xl sm:text-4xl lg:text-5xl ml-4 sm:ml-0 font-bold text-sitesecond tracking-tight">What Does Your Power Cost?</h4>
+      <p class="bg-black/20 p-8 text-white font-lg text-center">
+        In 2022, electricity in Hawaii cost about 
+        <%= link_to 'double', "https://paylesspower.com/blog/electric-rates-by-state/", target: :_blank, class: "text-blue-500 underline" %> the national average.
+        That's mostly because we import our energy as oil, but we also can't draw from neighboring state grids when problems happen.
+        <br><br>
+        On average, a single person here pays roughly $150 per month, while a family averages $400. You can see average rates by island 
+        <%= link_to 'here', "https://www.hawaiianelectric.com/billing-and-payment/rates-and-regulations/average-price-of-electricity", target: :_blank, class: "text-blue-500 underline" %> 
+      </p>
+    </div>
+</section>
