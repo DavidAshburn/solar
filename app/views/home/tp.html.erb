@@ -1,8 +1,6 @@
 <div class="flex flex-col bg-white">
   <div class="relative h-[90dvh] w-full">
-    <video <%#autoplay muted%> loop class="h-full w-full object-cover">
-      <source src="videos/iehhero.mp4" type="video/mp4">
-    </video>
+    <%= video_tag(["iehhero.mp4"], :class => "h-full w-full object-cover", :autoplay => true, :loop => true, :muted => true) %>
     <div class="flex w-full h-full z-10 absolute top-0 left-0 bg-black/40">
       <div class="flex p-2 items-center absolute top-2 right-10">
         <%= image_tag 'svg/marks/namefull.svg', class:"h-12" %>
@@ -10,13 +8,14 @@
       </div>
       <section class="container mx-auto flex flex-col justify-between py-8">
         <h2 class="text-2xl xs:text-3xl sm:text-4xl xl:text-8xl font-black text-white tracking-tight xl:w-5/12 mt-8">Good design cuts costs, not corners.</h2>
-        <div class="xl:w-5/12">
+        <div class="xl:w-1/3">
           <p class="text-lg text-white font-semibold leading-7 bg-black/20 p-2 rounded-md mt-2">
-            We don't have to sacrifice quality to guarantee our price. We simply build around what you need, and source directly from suppliers.
-            <br>
-            It's just common sense.
+            We don't have to sacrifice quality to guarantee our price.
+            We source directly from manufacturers, build around your needs, and do it right the first time.
             <br><br>
-            Join over 7,000 other families and businesses who saved two ways with SolarTech.
+            It's no secret, just common sense.
+            <br><br>
+            Get a quote today and join over 7,000 families and businesses who saved two ways with SolarTech.
           </p>
           <div class="flex self-end gap-4 items-center mt-2">
             <p class="text-xl font-black text-white">808-456-6254</p>
