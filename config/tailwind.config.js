@@ -20,6 +20,7 @@ module.exports = {
         sitesecond: '#07a7cb',
         sitethird: '#00728b',
         sitedark: '#092038',
+        sitelight: '#66ccff',
         gold: '#efc634',
       },
       letterSpacing: {

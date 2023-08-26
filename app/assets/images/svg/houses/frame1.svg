@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128.26 87.7" preserveAspectRatio="none">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #214265;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #092038;
+      }
+
+      .cls-3 {
+        fill: #00728b;
+      }
+
+      .cls-4 {
+        fill: #8ee8ff;
+      }
+
+      .cls-5 {
+        fill: #6cf;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <polygon class="cls-5" points="128.01 87.45 38.15 87.3 38.14 87.3 38.22 49.04 14.75 48.92 14.68 87.25 31.61 87.29 .25 87.23 21.19 17.83 90.16 12.04 128.01 87.45"/>
+      <polygon class="cls-1" points="128.01 87.45 90.16 12.04 93.84 .25 128.01 87.45"/>
+      <polygon class="cls-3" points="38.15 87.3 31.61 87.29 38.14 87.3 38.15 87.3"/>
+      <polygon class="cls-4" points="38.22 49.04 38.14 87.3 31.61 87.29 14.68 87.25 14.75 48.92 38.22 49.04"/>
+      <polygon class="cls-3" points="21.19 17.83 .25 87.23 12.08 12.36 21.19 17.83"/>
+      <polygon class="cls-2" points="93.84 .25 90.16 12.04 21.19 17.83 12.08 12.36 93.84 .25"/>
+    </g>
+  </g>
+</svg>

@@ -1,79 +1,8 @@
 <div class="flex flex-col bg-white">
-  <div class="relative h-[90dvh] w-full">
-    <%= video_tag(["iehhero.mp4"], :class => "h-full w-full object-cover", :autoplay => true, :loop => true, :muted => true) %>
-    <div class="flex w-full h-full z-10 absolute top-0 left-0 bg-black/40">
-      <div class="flex p-2 items-center absolute top-2 right-10">
-        <%= image_tag 'svg/marks/namefull.svg', class:"h-12" %>
-        <%= image_tag 'svg/marks/transp1.svg', class:"h-14 rounded" %>
-      </div>
-      <section class="container mx-auto flex flex-col justify-between py-8">
-        <h2 class="text-2xl xs:text-3xl sm:text-4xl xl:text-8xl font-black text-white tracking-tight xl:w-5/12 mt-8">Good design cuts costs, not corners.</h2>
-        <div class="xl:w-1/3">
-          <p class="text-lg text-white font-semibold leading-7 bg-black/20 p-2 rounded-md mt-2">
-            We don't have to sacrifice quality to guarantee our price.
-            We source directly from manufacturers, build around your needs, and do it right the first time.
-            <br><br>
-            It's no secret, just common sense.
-            <br><br>
-            Get a quote today and join over 7,000 families and businesses who saved two ways with SolarTech.
-          </p>
-          <div class="flex self-end gap-4 items-center mt-2">
-            <p class="text-xl font-black text-white">808-456-6254</p>
-            <button class="bg-sitesecond text-white font-bold m-[2px] px-4 py-2 max-w-fit">Get a Quote</button>
-          </div>
-        </div>
-      </section>
-    </div>
-  </div>
+  
+  <%= render 'indexsect/hero' %>
 
-  <section class="w-full bg-sitesecond relative h-[28rem]">
-    <ul class="container mx-auto flex justify-center items-center gap-4 text-lg h-full"> 
-      <li class="w-1/3 z-50">
-        <div class="flex flex-col gap-2 m-2 text-white bg-black/60 rounded p-2">
-          <h4>New Solar</h4>
-          <p>
-            If you want a lower bill, protection from power outages, or just to help the environment,
-            we make it easier than ever. <br>
-            We handle permits and approvals, help you with incentive programs, and stand behind our installations with full guarantees.
-            All you need to do is turn it on.
-          </p>
-        </div>
-      </li>
-      <li class="w-1/3 z-50">
-        <div class="flex flex-col gap-2 m-2 text-white bg-black/60 rounded p-2">
-          <h4>Upgrades</h4>
-          <p>
-            When your life grows, we can help your system keep up. 
-            <br>
-            Our inspections are free, and we do NEM upgrades, modular battery storage, microinverters, panels, and more. 
-            We try to preserve the equipment you already paid for. We'll talk about your recent power needs, and find the smallest change that meets them.
-          </p>
-        </div>
-      </li>
-      <li class="w-1/3 z-50">
-        <div class="flex flex-col gap-2 m-2 text-white bg-black/60 rounded p-2">
-          <h4>Service</h4>
-          <p>
-            20 years is a long time on any rooftop.
-            <br>
-            If your system is showing its age, or you need warranty service, we have over 10 years of experience servicing all kinds of hardware.
-            Even if we didn't install it, we've seen it before.
-          </p>
-        </div>
-      </li>
-    </ul>
-    <div class="absolute inset-y-0 inset-x-0 container mx-auto flex justify-center items-center gap-4 shadow-lg h-full">
-      <div class="w-1/3 h-3/4">
-        <%= image_tag 'svg/houses/h11.svg', class:"h-full" %>
-      </div>
-      <div class="w-1/3 h-3/4">
-        <%= image_tag 'svg/houses/h11.svg', class:"h-full" %>
-      </div>
-      <div class="w-1/3 h-3/4">
-        <%= image_tag 'svg/houses/h11.svg', class:"h-full" %>
-      </div>
-    </div>
-  </section>
+  <%= render 'indexsect/services' %>
 
   <%= render 'indexsect/powerchart' %>
 
@@ -81,3 +10,8 @@
 
   <%= render 'indexsect/approach' %>
 
+  <%= render 'indexsect/reviews' %>
+
+
+
+</div>

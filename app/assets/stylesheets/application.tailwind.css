@@ -2,17 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1 {
+    @apply text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white;
+  }
 
-@layer components {
-  .responsive {
-    @apply bg-sky-500 xs:bg-teal-300 sm:bg-green-500 md:bg-yellow-500 lg:bg-orange-500 xl:bg-red-500;
+  h2 {
+    @apply text-slate-900 text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tight dark:text-slate-50;
+  }
+
+  h3 {
+    @apply text-slate-900 text-xl sm:text-2xl lg:text-4xl font-extrabold tracking-tight dark:text-slate-50;
+  }
+
+  h5 {
+    @apply text-slate-100 font-bold text-4xl sm:text-5xl lg:text-6xl tracking-tight;
   }
 }
 
-.banner-newsolar {
-  object-position: 25% 75%;
-}
+@layer components {
 
-.banner-quote {
-  object-position: 50% 50%;
+  .responsive {
+    @apply bg-sky-500 xs:bg-teal-300 sm:bg-green-500 md:bg-yellow-500 lg:bg-orange-500 xl:bg-red-500;
+  }
+
+  .bgreen {
+    @apply bg-green-500;
+  }
+
+  .borange {
+    @apply bg-orange-500;
+  }
+
+  .bg-svg-frame {
+    background-image: url( 'svg/houses/frame1.svg' );
+    /* background-size: 100% 100%; */
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .bg-img-happy {
+    background-image: url( 'happy.jpg' );
+    background-size: cover;
+  }
+
+  .bg-left-offset {
+    background-position-x: 40%;
+  }
+
+  .banner-newsolar {
+    object-position: 25% 75%;
+  }
+  
+  .banner-quote {
+    object-position: 50% 50%;
+  }
 }

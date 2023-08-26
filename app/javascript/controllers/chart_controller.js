@@ -7,13 +7,14 @@ export default class extends Controller {
     ];
   
     connect() {
-        this.sliderTarget.value = 400;
+        let initialmonthly = 400;
+        this.sliderTarget.value = initialmonthly;
         this.ctx = document.getElementById('monthlypowerchart');
 
         this.years = ['1','2','4','6','10','15'];
         this.values = [];
         for(let i = 0; i < this.years.length; i++) {
-            this.values.push(parseInt(this.years[i]) * 12 * 150);
+            this.values.push(parseInt(this.years[i]) * 12 * initialmonthly);
         }
 
         Chart.defaults.backgroundColor = '#FFFFFF';
@@ -39,7 +40,7 @@ export default class extends Controller {
                 plugins: {
                     title: {
                         display: true,
-                        text: 'Total Costs over Time'
+                        text: 'Power Bills Over Time'
                     }
                 },
                 scales: {
