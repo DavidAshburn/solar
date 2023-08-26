@@ -40,7 +40,7 @@ export default class extends Controller {
                 plugins: {
                     title: {
                         display: true,
-                        text: 'Power Bills Over Time'
+                        text: 'A Power Bill Over Time'
                     }
                 },
                 scales: {
