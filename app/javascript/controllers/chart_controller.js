@@ -20,7 +20,7 @@ export default class extends Controller {
         Chart.defaults.borderColor = "#092038";
         Chart.defaults.backgroundColor  = '#66ccff',
         Chart.defaults.color = '#FFF';
-        Chart.defaults.font.size = 1.2 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+        Chart.defaults.font.size = parseFloat(getComputedStyle(document.documentElement).fontSize);
         Chart.defaults.plugins.legend.display = false;
 
         this.costChart = new Chart(ctx, {
@@ -104,7 +104,7 @@ export default class extends Controller {
         this.slidevalTarget.innerText = val;
     
         for(let i = 0; i < this.years.length; i++) {
-          this.values[i] = [val * this.years[i] * 12];
+          this.values[i] = val * this.years[i] * 12;
         };
         this.costChart.update('resize');
     }
