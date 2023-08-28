@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.1 92.13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #214265;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #092038;
+      }
+
+      .cls-3 {
+        fill: #00728b;
+      }
+
+      .cls-4 {
+        fill: #6cf;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <polygon class="cls-3" points="39.24 0 48.57 29.91 58.1 22.99 58.1 0 39.24 0"/>
+      <polygon class="cls-3" points="51.26 67.08 58.1 70.67 58.1 54.01 51.26 67.08"/>
+      <polygon class="cls-4" points="51.26 67.08 50.02 68.57 58.1 75.31 58.1 70.67 51.26 67.08"/>
+      <polygon class="cls-1" points="50.02 68.57 34.84 55.91 0 68.65 58.1 92.13 58.1 75.31 50.02 68.57"/>
+      <polygon class="cls-2" points="49.91 33.95 38.33 56.13 51.4 62.96 58.1 50.14 58.1 38.23 49.91 33.95"/>
+      <polygon class="cls-4" points="51.4 62.96 38.33 56.13 49.91 33.95 58.1 38.23 58.1 22.99 48.57 29.91 34.84 55.91 50.02 68.57 51.26 67.08 58.1 54.01 58.1 50.14 51.4 62.96"/>
+      <polygon class="cls-2" points="0 68.65 39.24 0 48.57 29.91 34.84 55.91 0 68.65"/>
+    </g>
+  </g>
+</svg>

@@ -1,9 +1,9 @@
-<div class="w-full bg-sitemain pt-2 h-[250x] text-white">
+<div class="w-full bg-sitedark h-[250x] text-white">
     <nav class="container mx-auto px-8 flex items-end justify-start gap-4 items-center">
         <%= link_to(root_path) do %>
-            <%= image_tag 'used/using/blue_logo.jpg', class:"h-[100px] md:h-[200px] w-auto rounded-t-lg" %>
+            <%= image_tag 'svg/plates/p6.svg', class:"h-[100px] md:h-[200px] w-auto rounded-t-lg" %>
         <% end %>
-        <div class="flex flex-col font-black md:gap-2 text-base md:text-lg font-light md:font-medium">
+        <div class="flex flex-col font-black md:gap-2 text-base md:text-lg font-semibold md:font-medium small-caps">
             <%= link_to 'New Solar', home_newsolar_path, class:"whitespace-nowrap" %>
             <%= link_to 'Service', home_service_path, class:"whitespace-nowrap" %>
             <%= link_to 'Upgrades', home_upgrades_path, class:"whitespace-nowrap" %>

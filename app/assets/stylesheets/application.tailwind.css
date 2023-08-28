@@ -8,7 +8,7 @@
   }
 
   h2 {
-    @apply text-slate-100 text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tight;
+    @apply text-slate-100 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight;
   }
 
   h3 {
@@ -43,8 +43,24 @@
     background-size: cover;
   }
 
+  .bg-home-r1 {
+    background-image: url( 'svg/houses/right1.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+
+  .bg-home-l1 {
+    background-image: url( 'svg/houses/left2.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
   .bg-left-offset {
     background-position-x: 40%;
+  }
+
+  .bg-top-third {
+    background-position-y: 30%;
   }
 
   .banner-newsolar {
@@ -53,5 +69,13 @@
   
   .banner-quote {
     object-position: 50% 50%;
+  }
+
+  .mirror {
+    transform: scale(-1,1);
+  }
+
+  .small-caps {
+    font-variant: small-caps;
   }
 }

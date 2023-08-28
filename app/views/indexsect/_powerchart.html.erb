@@ -1,16 +1,16 @@
-<section data-controller="chart" class="w-full bg-sitemain pt-4">
-    <div class="container mx-auto flex flex-col md:flex-row md:justify-center gap-4 pt-4">
+<section data-controller="chart" class="w-full bg-sitemain pt-24 max-sm:pb-4 xl:-mb-4 -mt-4 z-10">
+    <div class="container mx-auto mr-1/3 flex flex-col md:flex-row md:justify-center gap-4 pt-4">
 
-      <div class="w-full md:w-5/12">
+      <div class="w-full md:w-1/2">
         <div class="w-full flex flex-col justify-evenly gap-2">
           <h2 class="ml-4 sm:ml-0 text-sitelight text-center">What Does Your Power Cost?</h2>
           <div class="flex flex-col sm:flex-row justify-center items-center gap-2">
-            <input type="range" id="chartlymonth" name="monthly" min="150" max="600" step="10" data-chart-target="slider" data-action="input->chart#setValues" class=""/>
-            <label for="monthly" class="text-white font-black text-xl">$<span data-chart-target="slideval">400</span> Monthly</label>
+            <input type="range" id="chartlymonth" name="monthly" min="150" max="800" step="10" data-chart-target="slider" data-action="input->chart#setValues" class=""/>
+            <label for="monthly" class="text-white font-black text-xl">$<span data-chart-target="slideval">400</span> / month</label>
           </div>
         </div>
 
-        <div class="max-md:hidden flex items-center w-full px-4 md:px-12 py-4 text-white sm:text-lg font-bold text-start">
+        <div class="max-md:hidden flex items-center w-full px-4 lg:px-12 py-4 text-white sm:text-lg font-bold text-start">
           <p class="z-30">In 2018, fuels for power generation <%= link_to 'were over half of all imports to Hawaii.', "https://energy.hawaii.gov/wp-content/uploads/2020/11/HSEO_FactsAndFigures-2020.pdf#page=3", target: :_blank, class: "text-blue-500 underline" %>
             Our municipal power here costs about double the national average as a result of how we make it.
             <br><br>
@@ -20,12 +20,12 @@
         </div>
       </div>
 
-      <div class="w-full md:w-5/12">
-        <div class="w-full shadow-lg">
-          <div class="h-[50vh] md:h-[40vh] w-full bg-sitethird/20">
+      <div class="w-full md:w-1/2 lg:w-5/12">
+        <div class="w-full shadow-lg bg-sitethird/20 pb-2">
+          <div class="h-[50vh] md:h-[45vh] lg:h-[40vh] w-full">
             <canvas id="monthlypowerchart" aria-label="Cost of electricity over time" role="img"></canvas>
           </div>
-          <div id="chartbot" class="sm:hidden w-full -mt-2 text-center text-lg text-slate-100 font-black font-montserrat">Years</div>
+          <div id="chartbot" class="sm:hidden w-full text-center text-slate-100 font-semibold font-montserrat">Years</div>
         </div>
 
         <div class="md:hidden flex items-center w-full px-4 md:px-12 py-4 text-white sm:text-lg font-bold text-start">
@@ -33,7 +33,7 @@
             Our municipal power here costs about double the national average as a result of how we make it.
             <br><br>
             A single person pays roughly $150 per month, while a family averages $400. <br>
-            <%= link_to "See your rate at HECO's site.", "https://www.hawaiianelectric.com/billing-and-payment/rates-and-regulations/average-price-of-electricity", target: :_blank, class: "text-blue-500 underline" %> 
+            <%= link_to "You can see your rate here.", "https://www.hawaiianelectric.com/billing-and-payment/rates-and-regulations/average-price-of-electricity", target: :_blank, class: "text-blue-500 underline" %> 
           </p>
         </div>
       </div>
