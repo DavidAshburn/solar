@@ -41,6 +41,7 @@
   .bg-img-happy {
     background-image: url( 'happy.jpg' );
     background-size: cover;
+    background-position: center;
   }
 
   .bg-home-r1 {
