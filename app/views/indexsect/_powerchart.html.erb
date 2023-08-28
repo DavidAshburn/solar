@@ -1,20 +1,29 @@
-<section data-controller="chart" class="w-full bg-sitemain flex justify-center gap-12 py-12">
-    <div class="my-auto w-5/12">
-      <canvas id="monthlypowerchart" aria-label="Cost of electricity over time" role="img" class="bg-gradient-to-b from-white from-20% to-gray-300"></canvas>
-    </div>
-    <div class="my-8 w-5/12 flex flex-col justify-evenly gap-2">
-      <h2 class="ml-4 sm:ml-0 text-sitelight">What Does Your Power Cost?</h2>
-      <div class="flex items-center gap-2">
-        <input type="range" id="chartlymonth" name="monthly" min="150" max="600" step="10" data-chart-target="slider" data-action="input->chart#setValues" class=""/>
-        <label for="monthly" class="text-white font-black text-xl">$<span data-chart-target="slideval">400</span> Monthly</label>
+<section data-controller="chart" class="w-full bg-sitemain">
+    <div class="container mx-auto flex flex-col gap-4 pt-4">
+      
+      <div class="xl:w-5/12 flex flex-col justify-evenly gap-2">
+        <h2 class="ml-4 sm:ml-0 text-sitelight">What Does Your Power Cost?</h2>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-2">
+          <input type="range" id="chartlymonth" name="monthly" min="150" max="600" step="10" data-chart-target="slider" data-action="input->chart#setValues" class=""/>
+          <label for="monthly" class="text-white font-black text-xl">$<span data-chart-target="slideval">400</span> Monthly</label>
+        </div>
+        
       </div>
-      <p class="w-2/3 bg-black/20 p-8 text-white font-lg text-start">
-        In 2022, electricity in Hawaii cost about 
-        <%= link_to 'double', "https://paylesspower.com/blog/electric-rates-by-state/", target: :_blank, class: "text-blue-500 underline" %> the national average.
-        We have to import about 80% of our energy as oil which has been expensive.
-        <br><br>
-        On average, a single person here pays roughly $150 per month, while a family averages $400. You can see average rates by island 
-        <%= link_to 'here.', "https://www.hawaiianelectric.com/billing-and-payment/rates-and-regulations/average-price-of-electricity", target: :_blank, class: "text-blue-500 underline" %> 
-      </p>
+
+      <div class="w-full shadow-lg">
+        <div class="h-[50vh] w-full xl:w-5/12">
+          <canvas id="monthlypowerchart" aria-label="Cost of electricity over time" role="img"></canvas>
+        </div>
+        <div id="chartbot" class="sm:hidden bg-gray-300 w-full xl:w-5/12 -mt-2 text-center text-lg font-black font-montserrat">Years</div>
+      </div>
+
+      <div class="flex items-center w-full xl:w-5/12 px-12 py-4 text-white font-lg font-bold text-start">
+        <p class="z-30">In 2018, fuels for power generation <%= link_to 'were over half of all imports to Hawaii.', "https://energy.hawaii.gov/wp-content/uploads/2020/11/HSEO_FactsAndFigures-2020.pdf#page=3", target: :_blank, class: "text-blue-500 underline" %>
+          Our municipal power here costs about double the national average as a result of how we make it.
+          <br><br>
+          A single person pays roughly $150 per month, while a family averages $400. <br>
+          <%= link_to "See your rate at HECO's site.", "https://www.hawaiianelectric.com/billing-and-payment/rates-and-regulations/average-price-of-electricity", target: :_blank, class: "text-blue-500 underline" %> 
+        </p>
+      </div>
     </div>
 </section>

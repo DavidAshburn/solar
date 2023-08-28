@@ -43,11 +43,3 @@ module.exports = {
     require('@tailwindcss/container-queries'),
   ]
 }
-
-/*
-sitemain: rgba(33, 66, 101, 1)
-sitesecond: '#07a7cb',
-sitethird: '#00728b',
-sitedark: '#092038',
-gold: '#efc634',
-*/
