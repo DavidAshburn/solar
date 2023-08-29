@@ -1,28 +1,43 @@
-<section class="bg-sitepale w-full relative pb-8">
-    <div class="container mx-auto flex flex-col md:flex-row md:flex-row-reverse gap-12 mb-12 min-h-fit">
-        <div class="w-full md:w-1/3 h-24 md:h-auto bg-img-happy bg-top-third md:max-xl:bg-left-offset xl:bg-center"></div>
-        <div class="w-full md:w-1/2 flex flex-col">
-            <h2 class="text-sitedark">Our Reviews</h2>
-            <div class="flex flex-col">
-                <p class="px-8 text-sitedark font-semibold text-start">
-                    <span class="font-bold text-lg">The power you use is only part of the puzzle.</span> 
-                    <br><br>
-                    Our consultants will talk with you about your regular power needs, patterns of use, your location's impact, and most importantly, 
-                    what you want out of a solar system.
-                    With that in mind, and access to a wide range of suppliers, we can find the most cost-effective options for your goals.
-                    <br><br>
-                    We handle permits and applications, install at your convenience, 
-                    monitor your system performance afterwards, and we are always available if you need warranty or repair service.
-                    <br><br>
-                    In 2013 we set out to be a one-stop solar company that our neighbors could trust, and that's just what we've done. Our core 
-                    philosophy is to waste nothing and be a good neighbor, the business will take care of itself.
-                </p>
-                <div class="flex gap-2 items-center mt-8">
-                    <button>Get a Quote</button>
-                    <p class="text-xl font-black text-sitedark">808-456-6254</p>
+<section role="region" aria-labelledby="review-title" class="bg-sitepale w-full relative pb-8">
+    <h2 id="review-title" class="text-sitedark">Our Reviews</h2>
+    <div class="container mx-auto min-h-fit rbord">
+        <div class="flex flex-col md:flex-row gap-4 tbord" data-controller="swap"></div>
+            <div class="w-full md:w-5/12 flex gbord">
+                <input type="button" value="Previous" data-action="swap#previous">
+                <div class="flex flex-col gap-2 bg-gradient-to-b from-slate-200 to-slate-400 p-2 leading-5">
+                    <div data-swap-target="review1">
+                        <h4>Name</h4>
+                        <p class="text-center">
+                            readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for
+                        </p>
+                    </div>
+                    <div class="hidden" data-swap-target="review2">
+                        <h4>Name</h4>
+                        <p class="text-center">
+                            readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for
+                        </p>
+                    </div>
+                    <div class="hidden" data-swap-target="review3">
+                        <h4>Name</h4>
+                        <p class="text-center">
+                            readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for
+                        </p>
+                    </div>
+                    <div class="hidden" data-swap-target="review4">
+                        <h4>Name</h4>
+                        <p class="text-center">
+                            readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for
+                        </p>
+                    </div>
                 </div>
+                <input type="button" value="Next" data-action="swap#next">
+            </div>
+            <div class="p-4 w-1/4 h-40">
+                <%= image_tag 'svg/houses/h3.svg', class:"w-full h-full", data: { swap_target: "house1" } %>
+                <%= image_tag 'svg/houses/h4.svg', class:"w-full h-full hue-rotate-30 hidden", data: { swap_target: "house2" } %>
+                <%= image_tag 'svg/houses/h5.svg', class:"w-full h-full hue-rotate-90 hidden", data: { swap_target: "house3" } %>
+                <%= image_tag 'svg/houses/h6.svg', class:"w-full h-full hue-rotate-180 hidden", data: { swap_target: "house4" } %>
             </div>
         </div>
-    </div>  
-    <div class="absolute top-0 left-0 md-max:hidden md:w-1/6 h-5/6 py-4 bg-home-l1"></div>
+    </div> 
 </section>
