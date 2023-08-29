@@ -12,15 +12,19 @@
   }
 
   h3 {
-    @apply text-slate-100 text-xl sm:text-2xl lg:text-4xl font-extrabold tracking-tight;
+    @apply text-slate-100 text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight;
+  }
+
+  h3 {
+    @apply text-slate-100 text-xl sm:text-2xl lg:text-3xl font-extrabold tracking-tight;
   }
 
   h5 {
-    @apply text-slate-100 font-bold text-4xl sm:text-5xl lg:text-6xl tracking-tight;
+    @apply text-slate-100 font-bold text-lg sm:text-xl lg:text-2xl tracking-tight;
   }
 
   button {
-    @apply bg-gradient-to-br from-sitelight to-sitesecond text-xl font-bold m-[2px] px-4 py-2 max-w-fit;
+    @apply bg-gradient-to-br from-sitelight to-sitesecond font-bold py-1 px-2;
   }
 }
 
@@ -28,6 +32,17 @@
 
   .responsive {
     @apply bg-sky-500 xs:bg-teal-300 sm:bg-green-500 md:bg-yellow-500 lg:bg-orange-500 xl:bg-red-500;
+  }
+
+  .tbord {
+    @apply border-2 border-teal-300;
+  }
+  .gbord {
+    @apply border-2 border-green-300;
+  }
+
+  .rbord {
+    @apply border-2 border-red-300;
   }
 
   .bgreen {
@@ -46,6 +61,18 @@
 
   .bg-home-r1 {
     background-image: url( 'svg/houses/right1.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+
+  .bg-home-r2 {
+    background-image: url( 'svg/houses/right2.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+
+  .bg-home-r3 {
+    background-image: url( 'svg/houses/right3.svg');
     background-repeat: no-repeat;
     background-position: right center;
   }

@@ -7,7 +7,7 @@ export default class extends Controller {
     ];
   
     connect() {
-        let initialmonthly = 400;
+        let initialmonthly = 150;
         this.sliderTarget.value = initialmonthly;
         let ctx = document.getElementById('monthlypowerchart');
 
